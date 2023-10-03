@@ -1,0 +1,281 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999999;
+    stroke-dashoffset: 1000px;
+    stroke-dasharray: 1000px;
+ 
+}
+@keyframes animation{
+    to{
+        stroke-dasharray: 450px;
+    }
+}
+
+.animate{
+
+    animation: animation 10s cubic-bezier(0.19, 1, 0.22, 1)  both;
+    animation-delay: 1s;
+}
+
+#background {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: url(https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    background-size: cover;
+    background-position: 60%;
+}
+
+#circle {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: 100000;
+    pointer-events: none;
+    border: 1.1px solid #fff;
+}
+
+
+#wrapper h1 {
+    color: #fff;
+    font-size: 38vw;
+    font-weight: 900;
+    font-family: monospace;
+}
+
+#whitestrip {
+    position: absolute;
+    top: 55%;
+    right: 0;
+    width: 48.9%;
+    transform: translate(0%, -50%);
+    height: 7vw;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blackcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 10vw;
+    height: 25vh;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: -3%;
+    transform: translate(-50%, -50%);
+}
+
+#blackcard p {
+    color: #fff;
+    font-family: cursive;
+    text-align: center;
+    font-size: .8vw;
+    line-height: 1.5vw;
+}
+
+#linelem {
+    display: flex;
+    align-items: center;
+
+}
+
+#linelem .line {
+    width: 18vw;
+    height: 2px;
+    background-color: black;
+    margin: 0 30px;
+
+}
+
+#linelem h4 {
+    font-family: cursive;
+    font-size: 1.2vw;
+}
+
+#linelem i {
+    cursor: pointer;
+}
+#background>h5{
+position: absolute;
+top: 50%;
+text-transform: uppercase;
+font-family: 900;
+letter-spacing: 2vh;
+transform: rotate(-90deg);
+font-size: 1vw;
+color: #fff;
+font-family: monospace;
+
+}
+
+@media (max-width:512px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+    #wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-image: url(https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+        background-size: cover;
+        background-position: 60%;
+    }
+    
+   
+    
+    
+    #wrapper h1 {
+        color: #fff;
+        font-size: 60vw;
+        font-weight: 900;
+        font-family: monospace;
+    }
+    
+    #whitestrip {
+        display: none;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 48.9%;
+        transform: translate(0%, -50%);
+        height: 7vw;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #blackcard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        width: 5vw;
+        height: 10vh;
+        background-color: black;
+        position: absolute;
+        top: 50%;
+        left: -3%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #blackcard p {
+        color: #fff;
+        font-family: cursive;
+        text-align: center;
+        font-size: .8vw;
+        line-height: 1.5vw;
+    }
+    
+    #linelem {
+        position: absolute;
+        z-index: 99999;
+        display: flex;
+        align-items: center;
+    
+    }
+    
+    #linelem .line {
+        width: 10vw;
+        height: 1px;
+        background-color: black;
+        margin: 0 30px;
+    
+    }
+    
+    #linelem h4 {
+        font-family: cursive;
+        font-size: 6px;
+    }
+    
+    #linelem i {
+        cursor: pointer;
+    }
+    #background>h5{
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    width: 100vw;
+    text-transform: uppercase;
+    font-family: 900;
+    letter-spacing: 2vh;
+    transform: translate(-50%,-50%) rotate(0deg) !important;
+    font-size: 1vw;
+    color: #fff;
+    font-family: monospace;
+    
+    }
+    .smallScreenOnclick{
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        z-index: 999999;
+        transform: translate(-50%,-50%);
+        padding: 10px 10px;
+        border-radius: 20px;
+        background-color: rgb(203, 203, 203);
+    }
+    svg{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80vw;
+        transform: translate(-50%, -50%);
+        z-index: 999999;
+        stroke-dashoffset: 1000px;
+        stroke-dasharray: 1000px;
+     
+    }
+}
+/* third commit */
